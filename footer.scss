@@ -1,0 +1,30 @@
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    >p>a{
+        color: black;
+    }
+    >button{
+        width: 150px;
+        height: 40px;
+        background: black;
+        color: white;
+        &:hover{
+            background: rgba(177, 177, 177, 0.61);
+            color: black;
+        }
+    }
+
+
+ 
+}
+   @media screen and (max-width:600px) {
+        footer{
+            flex-direction: column !important;
+        }
+    }

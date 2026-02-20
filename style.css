@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  max-width: 1040px;
+  min-width: 320px;
+  margin: auto;
+}
+section header {
+  width: 100%;
+  background: white;
+  min-width: 320px;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+section header nav {
+  width: 100%;
+  height: 50px;
+}
+section header nav ul {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+section header nav ul li {
+  width: 25%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  cursor: pointer;
+}
+section header nav ul li:hover {
+  background: rgba(104, 103, 103, 0.409);
+}
+section header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+section * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+section main {
+  margin-top: 50px;
+  max-width: 1040px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+section main section {
+  width: 100%;
+  margin-top: 50px;
+  height: auto;
+  padding: 0 30px;
+}
+section main section .marketing {
+  width: 100%;
+}
+section main section .marketing h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+section main section .marketing p {
+  font-weight: 500;
+}
+section main section .carousel-indicators > button {
+  height: 10px !important;
+  -webkit-box-shadow: 0px 0px 2px 8px rgb(57, 52, 52) inset;
+          box-shadow: 0px 0px 2px 8px rgb(57, 52, 52) inset;
+}
+section main section .direction {
+  width: 100%;
+  height: 50px;
+  background: #616161;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 10px;
+}
+section main section .direction > button {
+  background: transparent !important;
+  border: none;
+}
+section main section .direction > button .next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  fill: white;
+}
+section main section .direction > button .next:hover {
+  fill: rgb(35, 156, 99);
+}
+section main section .direction > button .prev {
+  fill: white;
+}
+section main section .direction > button .prev:hover {
+  fill: rgb(35, 156, 99);
+}
+section main section .offer {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section main section .offer .name {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+section main section .offer .name .underline {
+  width: 200px;
+  height: 5px;
+  background: #616161;
+}
+section main section .things {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+section main section .things > .box {
+  width: 25%;
+  min-width: 200px;
+  height: 200px;
+  padding: 20px 7px;
+}
+section main section .things > .box > h5 {
+  font-size: 23px;
+}
+section main section .things > .box > p {
+  font-weight: 400;
+}
+section main section .things .design {
+  background: white;
+}
+section main section .things .branding {
+  background: #9E9E9E;
+}
+section main section .things .consultation {
+  background: #616161;
+}
+section main section .things .consultation > h5,
+section main section .things .consultation p {
+  color: white;
+}
+section main section .things .promises {
+  background: black;
+}
+section main section .things .promises > h5,
+section main section .things .promises p {
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  section main section .things .box {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  section main section .things .box {
+    width: 100%;
+  }
+}
+section main section .plans {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+section main section .plans .name {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section main section .plans .levels {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  margin-top: 60px;
+}
+section main section .plans .levels .type {
+  width: 33.3333333333%;
+  border: groove 2px;
+  border-bottom: none;
+}
+section main section .plans .levels .type:hover {
+  -webkit-box-shadow: 0 0 8px rgb(74, 73, 73);
+          box-shadow: 0 0 8px rgb(74, 73, 73);
+}
+section main section .plans .levels .type > ul {
+  width: 100%;
+}
+section main section .plans .levels .type > ul .first {
+  font-size: 2vw;
+  background: black;
+  color: white;
+}
+section main section .plans .levels .type > ul .graypro {
+  font-size: 2vw;
+  background: #616161;
+  color: white;
+}
+section main section .plans .levels .type > ul > li {
+  text-align: center;
+  padding: 20px;
+  border-bottom: groove 2px;
+  list-style: none;
+}
+section main section .plans .levels .type > ul > li > button {
+  padding: 11px 22px;
+  background-color: #449C48;
+  color: white;
+  border: none;
+}
+section main section .plans .levels .type > ul > li > button:hover {
+  background: rgba(192, 188, 188, 0.7843137255);
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  section main section .plans .levels {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section main section .plans .levels > div {
+    width: 100% !important;
+  }
+}
+section main .persons {
+  margin-top: 50px;
+}
+section main .persons .name {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+section main .persons .name .underline {
+  width: 150px;
+  height: 5px;
+  background: #616161;
+}
+section main .persons .people {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+section main .persons .people .worker {
+  min-width: 33.3333333333% !important;
+}
+section main .persons .people .worker .img-john {
+  background-image: url(./image/John.jpg);
+}
+section main .persons .people .worker .img-jane {
+  background-image: url(./image/Jane.jpg);
+}
+section main .persons .people .worker .img-mike {
+  background-image: url(./image/Mike.jpg);
+}
+section main .persons .people .worker .img {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center center;
+}
+section main .persons .people .worker .about {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 13px;
+  -webkit-box-shadow: 0 0 8px black;
+          box-shadow: 0 0 8px black;
+}
+section main .persons .people .worker .about > button {
+  padding: 5px 15px;
+  border: none;
+}
+section main .persons .people .worker .about > button:hover {
+  background: rgba(141, 139, 139, 0.637);
+}
+@media screen and (max-width: 600px) {
+  section main .persons .people {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  section main .persons .people .worker {
+    width: 100%;
+  }
+}
+section main .contact {
+  margin-top: 70px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+section main .contact .name {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+section main .contact .name .underline {
+  width: 150px;
+  height: 5px;
+  background: #616161;
+}
+section main .contact form {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  font-weight: 500;
+}
+section main .contact form .input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+}
+section main .contact form > button {
+  width: 100%;
+  height: 40px;
+  background: black;
+  color: white;
+}
+section main .contact form > button:hover {
+  background: rgba(163, 162, 162, 0.635);
+  color: black;
+}
+section footer {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+section footer > p > a {
+  color: black;
+}
+section footer > button {
+  width: 150px;
+  height: 40px;
+  background: black;
+  color: white;
+}
+section footer > button:hover {
+  background: rgba(177, 177, 177, 0.61);
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  section footer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
